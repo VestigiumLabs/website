@@ -8,6 +8,7 @@ Site officiel de **VestigiumLabs**, un laboratoire indépendant consacré à la 
 - 💻 Développement d'outils Open Source
 
 L'objectif de ce dépôt est de développer le site web officiel de VestigiumLabs.
+Ce laboratoire est en construction. Chaque version de ce site teflète les compétences acquises au fil du temps.
 
 ---
 
