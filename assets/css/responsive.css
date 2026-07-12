@@ -1,0 +1,299 @@
+/*
+|--------------------------------------------------------------------------
+| VestigiumLabs — Responsive
+|--------------------------------------------------------------------------
+| Adaptations des layouts et composants selon la largeur disponible.
+|--------------------------------------------------------------------------
+*/
+
+/* ==========================================================================
+   Laptop
+   Jusqu'à 1279 px
+   ========================================================================== */
+
+@media (max-width: 1279px) {
+  .container,
+  .reading-container {
+    width: min(calc(100% - 48px), var(--container-width));
+  }
+
+  .desktop-navigation {
+    gap: var(--space-3);
+  }
+
+  .mission-layout {
+    gap: var(--space-6);
+  }
+
+  .domain-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
+   Tablette
+   Jusqu'à 1023 px
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  .desktop-navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .mission-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+  }
+
+  .section-header {
+    align-items: center;
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
+   Mobile
+   Jusqu'à 767 px
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main,
+  header,
+  footer,
+  section,
+  nav,
+  article,
+  div,
+  ul,
+  li {
+    min-width: 0;
+  }
+
+  .container,
+  .reading-container {
+    width: calc(100% - 32px);
+  }
+
+  /* Header */
+
+  .brand img {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* Hero */
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero-container {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .hero-banner {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Sections */
+
+  .section {
+    padding-block: var(--space-5);
+  }
+
+  .mission-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+  }
+
+  .section-title {
+    margin-bottom: var(--space-4);
+    font-size: 20px;
+  }
+
+  .section-copy {
+    font-size: var(--font-size-small);
+  }
+
+  /* Domaines */
+
+  .domain-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+
+  .domain-grid li,
+  .value-grid li {
+    font-size: 12px;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+
+  /* En-têtes de section */
+
+  .section-header {
+    align-items: center;
+  }
+
+  .text-link {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Projets */
+
+  .project-grid {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: repeat(4, 152px);
+    gap: var(--space-2);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: var(--space-3);
+
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-card {
+    min-width: 152px;
+    min-height: 168px;
+
+    padding: var(--space-3);
+
+    scroll-snap-align: start;
+  }
+
+  .project-card h3 {
+    font-size: var(--font-size-small);
+  }
+
+  .project-card p {
+    font-size: 12px;
+  }
+
+  /* Valeurs */
+
+  .value-grid {
+    width: 100%;
+    max-width: 100%;
+
+    grid-template-columns: repeat(5, 80px);
+    gap: var(--space-2);
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: var(--space-2);
+
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .value-grid li {
+    min-width: 80px;
+  }
+
+  /* Appel final */
+
+  .cta-layout {
+    align-items: flex-start;
+  }
+
+  .final-cta h2 {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+
+  .final-cta p {
+    font-size: 13px;
+  }
+
+  .final-cta .button {
+    flex: 0 0 auto;
+
+    padding-inline: var(--space-3);
+
+    font-size: 12px;
+  }
+
+  /* Footer */
+
+  .footer-layout {
+    justify-content: center;
+  }
+
+  .site-footer p {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Très petits écrans
+   Jusqu'à 359 px
+   ========================================================================== */
+
+@media (max-width: 359px) {
+  .container,
+  .reading-container {
+    width: calc(100% - 24px);
+  }
+
+  .domain-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .cta-layout {
+    align-items: stretch;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .final-cta .button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,193 @@
+/*
+|--------------------------------------------------------------------------
+| VestigiumLabs — Layout
+|--------------------------------------------------------------------------
+| Structure générale des pages.
+|--------------------------------------------------------------------------
+*/
+
+/* ==========================================================================
+   Conteneurs
+   ========================================================================== */
+
+.container {
+  width: min(calc(100% - 96px), var(--container-width));
+  margin-inline: auto;
+}
+
+.reading-container {
+  width: min(calc(100% - 96px), var(--reading-width));
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  min-height: var(--header-height);
+
+  background-color: rgba(5, 8, 13, 0.96);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-layout {
+  min-height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-4);
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+
+  background-color: var(--color-background);
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* ==========================================================================
+   Surface principale
+   ========================================================================== */
+
+.content-surface {
+  color: #142033;
+  background-color: #f5f7fa;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  padding-block: var(--space-6);
+}
+
+.section-bordered {
+  border-top: 1px solid rgba(32, 52, 79, 0.16);
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: var(--space-4);
+}
+
+/* ==========================================================================
+   Mission et domaines
+   ========================================================================== */
+
+.mission-layout {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+
+  gap: var(--space-8);
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: var(--space-4);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* ==========================================================================
+   Projets
+   ========================================================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: var(--space-4);
+}
+
+/* ==========================================================================
+   Valeurs
+   ========================================================================== */
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: var(--space-4);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* ==========================================================================
+   Appel à l'action final
+   ========================================================================== */
+
+.final-cta {
+  padding-block: var(--space-4);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 8, 13, 0.95),
+      rgba(12, 21, 34, 0.9)
+    ),
+    var(--color-surface);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.cta-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-5);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  padding-block: var(--space-4);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-4);
+}

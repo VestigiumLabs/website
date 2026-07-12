@@ -54,15 +54,31 @@ Des technologies complémentaires pourront être ajoutées au fil de l'évolutio
 
 ## Statut
 
-🚧 En développement
+🚧 Version 0.1 en cours de validation.
 
-Le projet est actuellement en phase de conception.
+La première page d'accueil statique est implémentée en HTML5 et CSS3 natifs.
 
+Aucun framework, système de compilation ou dépendance externe n'est utilisé.
 ---
 
 ## Licence
 
 Aucune licence n'est définie pour le moment.
+
+---
+
+## Structure
+
+```text
+.
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   └── images
+│       ├── banner.png
+│       └── logo.png
+├── index.html
+└── README.md
 
 ---
 

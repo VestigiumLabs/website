@@ -1,0 +1,100 @@
+/*
+|--------------------------------------------------------------------------
+| VestigiumLabs Design System
+|--------------------------------------------------------------------------
+| Variables globales
+| Source : Brand Guide v1
+|--------------------------------------------------------------------------
+*/
+
+:root {
+
+  /* ======================================================================
+     Couleurs
+     ====================================================================== */
+
+  --color-background: #05080d;
+  --color-surface: #0c1522;
+  --color-surface-secondary: #20344f;
+
+  --color-primary: #4f86d9;
+
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #c7ccd4;
+
+  --color-success: #3fa66b;
+  --color-warning: #d9a441;
+  --color-error: #d95c5c;
+
+  --color-border: rgba(79, 134, 217, 0.22);
+
+  --shadow-default: 0 8px 24px rgba(5, 8, 13, 0.08);
+
+  /* ======================================================================
+     Typographie
+     ====================================================================== */
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  /* ======================================================================
+     Hiérarchie typographique
+     ====================================================================== */
+
+  --font-size-h1: 56px;
+  --font-size-h2: 40px;
+  --font-size-h3: 32px;
+  --font-size-h4: 24px;
+
+  --font-size-body: 18px;
+  --font-size-small: 16px;
+  --font-size-caption: 14px;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ======================================================================
+     Layout
+     ====================================================================== */
+
+  --container-width: 1280px;
+  --reading-width: 760px;
+
+  --header-height: 72px;
+
+  /* ======================================================================
+     Espacements
+     ====================================================================== */
+
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  --space-9: 128px;
+
+  /* ======================================================================
+     Rayons
+     ====================================================================== */
+
+  --radius-button: 8px;
+  --radius-input: 8px;
+  --radius-card: 16px;
+  --radius-section: 24px;
+
+  /* ======================================================================
+     Responsive
+     ====================================================================== */
+
+  --breakpoint-mobile: 767px;
+  --breakpoint-tablet: 1023px;
+  --breakpoint-laptop: 1279px;
+  --breakpoint-desktop: 1280px;
+
+}
